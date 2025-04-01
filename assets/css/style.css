@@ -1,0 +1,171 @@
+#video {
+    width: 100%;
+    height: auto;
+}
+header a:hover {
+    border-bottom:solid 1px black;
+}
+h1 {
+    position: absolute;
+    top: 52%;
+    left: 43%;
+    color: #D9C7B3;
+    font-size: 100px;
+}
+#recherche {
+    position: absolute;
+    background-color:#D9C7B3 ;
+    top: 50%;
+}
+
+.container-form {
+    position: absolute;
+    padding: 2rem;
+    background-color: #D9C7B3;
+    border-radius: 0.5rem;
+    top: 102%;
+    left: 27%;
+    gap: 2rem;
+    color: #363A2B;
+    width: 50%;
+}
+form {
+    display: flex;
+    gap: 2rem;
+}
+.container-form h4 {
+    flex-wrap: wrap;
+    width: 50%;
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 30%; 
+}
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input, select, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.btn {
+    position: absolute;
+    top: 88%;
+    left: 42%;
+    background-color: #363A2B;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+h4 {
+    flex-wrap: wrap;
+    width: 20%;
+}
+
+.container-feu,.container-terre {
+    width: 30%;
+    margin-left: 6%;
+    margin-right: 24%;
+}
+.container-Air, .container-Eau {
+    margin-left: 20%;
+    width: 30%;
+}
+
+.container-feu h2,.container-Air h2,.container-terre h2,.container-Eau h2{
+    font-size: 96px;
+    color: #363A2B;
+}
+.Hotel-feu,.Hotel-Air,.Hotel-Terre,.Hotel-Eau {
+    display: flex;
+    align-items: center;
+
+}
+
+p.finlande, p.Bresil,p.tailand,p.île-du-pacifique {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.8rem;
+}
+ul.avis-stars {
+    gap: 0.4rem;
+    margin-bottom: 3rem;
+}
+article {
+    margin-top: 4rem;
+    font-size: 24px;
+    color: #363A2B;
+    margin-bottom: 2rem;
+}
+.reserver {
+    background-color:#363A2B;
+    color: #fff;
+}
+
+section.Hotel-Air {
+    display: flex;
+    align-items: center;
+    margin-top: 6rem;
+}
+section.Hotel-Terre {
+    align-items: center;
+    margin-top: 6rem;
+}
+section.Hotel-Eau {
+    align-items: center;
+    margin-top: 6rem;
+}
+ 
+.concept {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 1.5rem;
+}
+.container-concept {
+    margin-left: 11%;
+    margin-top: 5rem;
+    margin-right: 8%;
+}
+.container-archi {
+    margin-top: 5rem;
+}
+img {
+    max-width: 100%; 
+    height: auto;
+}
+h3 {
+    font-size: 46px;
+    color: #363A2B;
+}
+#createur,.portrait {
+    width: 40%;
+}
+#archi,#concept {
+    width: 68%;
+}
+.createur {
+    display: flex;
+    color: #363A2B;
+    margin-top: 5rem;
+}
+#createur, .portrait {
+    width: 37.7%;
+    margin-left: 11%;
+}
+img.MRthuan {
+    width: 76.7%;
+    height: 100%;
+}
+img.backToTop {
+    position: fixed;
+    margin-left: 96%;
+    top: 85%;
+}
+

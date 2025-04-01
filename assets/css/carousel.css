@@ -1,0 +1,105 @@
+.container-img {
+    position: relative;
+    width: 500px; 
+    height: 300px; 
+    overflow: hidden;
+}
+
+.container-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.container-img img:nth-child(1) {
+    transform: translateX(0); 
+}
+
+.container-img img:nth-child(2) {
+    transform: translateX(90%); 
+}
+
+.container-img:hover img:nth-child(1) {
+    transform: translateX(-100%); 
+}
+
+.container-img:hover img:nth-child(2) {
+    transform: translateX(0); 
+}
+
+.container-img {
+    width: 40%;
+    height: 50vh;
+}
+/************** hotel air********************/
+.Hotel-Air.container-img {
+    position: relative;
+    width: 500px; 
+    height: 300px; 
+    overflow: hidden;
+}
+
+.Hotel-Air.container-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.Hotel-Air .container-img img:nth-child(1) {
+    transform: translateX(0); 
+}
+.Hotel-Air .container-img img:nth-child(2) {
+    transform: translateX(-90%); 
+}
+
+.Hotel-Air .container-img:hover img:nth-child(1) {
+    transform: translateX(100%); 
+}
+
+.Hotel-Air .container-img:hover img:nth-child(2) {
+    transform: translateX(0); 
+}
+
+.Hotel-Air .container-img {
+    width: 40%;
+    height: 50vh;
+}
+/************************hotel eau*******************************/
+.Hotel-Eau.container-img {
+    position: relative;
+    width: 500px; 
+    height: 300px; 
+    overflow: hidden;
+}
+
+.Hotel-Eau.container-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.Hotel-Eau .container-img img:nth-child(1) {
+    transform: translateX(0); 
+}
+.Hotel-Eau .container-img img:nth-child(2) {
+    transform: translateX(-90%); 
+}
+
+.Hotel-Eau .container-img:hover img:nth-child(1) {
+    transform: translateX(100%); 
+}
+
+.Hotel-Eau .container-img:hover img:nth-child(2) {
+    transform: translateX(0); 
+}
+
+.Hotel-Eau .container-img {
+    width: 40%;
+    height: 50vh;
+}

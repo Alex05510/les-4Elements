@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-5.3.3-dist/css/bootstrap-utilities.min.css">
+    <link rel="stylesheet" href="assets/main.scss">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/carousel.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <title>Les 4Terres</title>
+</head>
+<body id="backToTop">
+    <header>
+        <div class="container">
+            <div class="primary-nav">
+                <div class="logo">
+                    <img src="assets/images/logo/logo-4elementNoir.png" alt="Logo hotel 4elements en noir" id="logo">
+                    <ul>
+                        <li><a href="#sectionFeu">Feu</a></li>
+                        <li><a href="#sectionAir">Air</a></li>
+                        <li><a href="#sectionTerre">Terre</a></li>
+                        <li><a href="#sectionEau">Eau</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="secondary-nav">
+                <ul>
+                    <li>Contact</li>
+                    <li><img src="assets/images/pictos/picto-insta.svg" alt="picto lien insta hotel les 4Elements"></li>
+                    <li><img src="assets/images/pictos/picto-FB.svg" alt="picto lien Facebook hotel les 4Elements"></li>
+                </ul>
+                <div class="button" id="reserver">Reserver</div>
+                <div class="button" id="conexion">Se connecter</div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <video width="100%" height="auto" controls loop>
+                <source src="assets/images/videos/home.mp4" type="video/mp4" id="video">
+        </div>
+        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+        <div class="container-form">
+            <h4>Rechercher une disponiblité</h4>
+            <form>
+                <div class="form-group">
+                    <label for="hotel">Choisir un hôtel</label>
+                    <select id="hotel" name="hotel">
+                        <option value="hotel-terre">Hôtel Terre</option>
+                        <option value="hotel-mer">Hôtel Feu</option>
+                        <option value="hotel-ciel">Hôtel Air</option>
+                        <option value="hotel-ciel">Hôtel Eau</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="persons">Nbr de personnes</label>
+                    <input type="number" id="persons" name="persons" value="2" min="1" max="2">
+                </div>
+                <div class="form-group">
+                    <label for="arrival-date">Date d'arrivée</label>
+                    <input type="date" id="arrival-date" name="arrival-date">
+                </div>
+                <button type="submit" class="btn">Chercher</button>
+            </form>
+        </div>
+        <section class="Hotel-feu" id="sectionFeu">
+            <div class="container-feu">
+                <h2>Hôtel Feu</h2>
+                <p class="finlande"><img src="assets/images/pictos/lieux.png" alt="picto fleche maps" width="22px" height="28px">Finlande</p>
+                <ul class="avis-stars">
+                    <li><img src="assets/images/pictos/star-black.png" alt="Pictos étoile avis les 4elements noir"></li>
+                    <li><img src="assets/images/pictos/star-black.png" alt="Pictos étoile avis les 4elements noir"></li>
+                    <li><img src="assets/images/pictos/star-black.png" alt="Pictos étoile avis les 4elements noir"></li>
+                    <li><img src="assets/images/pictos/star-White.png" alt="Pictos étoile avis les 4elements blanc"></li>
+                    <li>(325 avis)</li>
+                </ul>
+                <article>
+                    <p>L'hôtel Feu ne se situe bien sûr pas sur un volcan, mais en Finlande. 
+                        Feu de laterre volcanique crachant non loin de là ses geysers, feu des volcans à l'horizon et, 
+                        bien entendu, feu des aurores boréales que vous pourrez admirer tous les soirs par le toit vitré de votre chambre.</p>
+                </article>
+                <button class="reserver">Reserver</button>
+            </div>
+            <div class="container-img">
+                <img src="assets/images/images/hotel-feu.jpg" alt="Hotel les 4element dans la foret et la neige" class="hotel">
+                <img src="assets/images/images/orore-boreales.jpg" alt="Hotel les 4element de face avec des aurores boréale" class="hotel-2">
+            </div>
+        </section>
+
+        <section class="Hotel-Air" id="sectionAir">
+            <div class="container-img">
+                <img src="assets/images/images/tours-bleuHotel.jpg" alt="Hotel les 4element dans une tours bleu au milieux des arbres" class="hotel">
+                <img src="assets/images/images/pont-suspendu.jpg" alt="un pont suspendu au milieux de la foret des hotels 4elements" class="hotel-2">
+            </div>
+            <div class="container-Air">
+                <h2>Hôtel Air</h2>
+                <p class="Bresil"><img src="assets/images/pictos/lieux.png" alt="picto fleche maps" width="22px" height="28px">Bresil</p>
+                <ul class="avis-stars">
+                    <li><img src="assets/images/pictos/star-black.png" alt="Pictos étoile avis les 4elements noir"></li>
+                    <li><img src="assets/images/pictos/star-black.png" alt="Pictos étoile avis les 4elements noir"></li>
+                    <li><img src="assets/images/pictos/star-black.png" alt="Pictos étoile avis les 4elements noir"></li>
+                    <li><img src="assets/images/pictos/star-White.png" alt="Pictos étoile avis les 4elements blanc"></li>
+                    <li>(325 avis)</li>
+                </ul>
+                <article>
+                    <p>L'hôtel Air se situe à la frontière du Brésil et du Pérou. 
+                        C'est un concept architectural innovant qui a permis une implantation à la cîme de la forêt pour offrir un panorama vertigineux et cotoyerchaque matin, 
+                        de votre chambre (avec ou sans piscine), les oiseaux à votre réveil.</p>
+                </article>
+                <button class="reserver">Reserver</button>
+            </div>
+        </section>
+
+        <section class="Hotel-Terre" id="sectionTerre">
+            <div class="container-terre">
+                <h2>Hôtel Terre</h2>
+                <p class="tailand"><img src="assets/images/pictos/lieux.png" alt="picto fleche maps" width="22px" height="28px">tailand</p>
+                <ul class="avis-stars">
+                    <li><img src="assets/images/pictos/star-black.png" alt="Pictos étoile avis les 4elements noir"></li>
+                    <li><img src="assets/images/pictos/star-black.png" alt="Pictos étoile avis les 4elements noir"></li>
+                    <li><img src="assets/images/pictos/star-black.png" alt="Pictos étoile avis les 4elements noir"></li>
+                    <li><img src="assets/images/pictos/star-White.png" alt="Pictos étoile avis les 4elements blanc"></li>
+                    <li>(325 avis)</li>
+                </ul>
+                <article>
+                    <p>L'hôtel Terre est situé dans des grottes naturelles en Thaïlande. Retaillées et aménagées avec beaucoup de soin, 
+                        les chambres de l'hôtel vous offriront soit la fraîcheur et l'apaisement à près de vingt mètres de profondeur, 
+                        soit un hâvre de paix ouvrant sur l'horizon de la mer au loin.</p>
+                </article>
+                <button class="reserver">Reserver</button>
+            </div>
+            <div class="container-img">
+                <img src="assets/images/images/chambre-murPierres.jpg" alt="une chambre des Hotel les 4element avec les murs en pierres" class="hotel">
+                <img src="assets/images/images/restaurent-murPierres.jpg" alt="une table de restaurent des hotels4element avec mur en pierre " class="hotel-2">
+            </div>
+        </section>
+
+        <section class="Hotel-Eau" id="sectionEau">
+            <div class="container-img">
+                <img src="assets/images/images/chambre-aquarium.jpg" alt="une chambre des Hotel les 4element avec panorama aquarium" class="hotel">
+                <img src="assets/images/images/enfant-quiPlonge.jpg" alt="un enfant qui plonge dans une piscine des Hotel les 4element" class="hotel-2">
+            </div>
+            <div class="container-Eau">
+                <h2>Hôtel Eau</h2>
+                <p class="île-du-pacifique"><img src="assets/images/pictos/lieux.png" alt="picto fleche maps" width="22px" height="28px">île du pacifique</p>
+                <ul class="avis-stars">
+                    <li><img src="assets/images/pictos/star-black.png" alt="Pictos étoile avis les 4elements noir"></li>
+                    <li><img src="assets/images/pictos/star-black.png" alt="Pictos étoile avis les 4elements noir"></li>
+                    <li><img src="assets/images/pictos/star-black.png" alt="Pictos étoile avis les 4elements noir"></li>
+                    <li><img src="assets/images/pictos/star-White.png" alt="Pictos étoile avis les 4elements blanc"></li>
+                    <li>(325 avis)</li>
+                </ul>
+                <article>
+                    <p>L'hôtel Eau est situé sur une île de 2 kilomètres carrés très exactement équidistante de Vladivostok et de Los Angeles. 
+                        C'est le milieu duPacifique. Vous y disposerez de votre plage, de votre bateau et de votre majordome privés. 
+                        Votre chambre est un caisson immergé à deux mètres sous l'eau.</p>
+                </article>
+                <button class="reserver">Reserver</button>
+            </div>
+        </section>
+        <section class="concept">
+            <div class="container-concept">
+                <h3>Le concept</h3>
+                <img src="assets/images/images/facade-hotelTriangle.jpg" alt="hotel les 4 element facade en triangle">
+                <article id="concept">
+                    <p>Depuis l'ouverture de ses 4 hôtels en 2012, 4 Éléments s'est démarqué en proposant des établissements exceptionnels dans des lieux uniques, symbolisant les quatre éléments : terre, eau, air et feu. Ces hôtels insolites, 
+                        construits dans des endroits inattendus à travers la planète, incarnent notre volonté de révolutionner le tourisme en intégrant luxe, aventure et vision à long terme. Chacun de nos établissements offre un environnement et un service uniques, 
+                        alliant la rigueur de l'hôtellerie de luxe à une proximité quotidienne avec les habitants. Explorez les environs avec des guides experts tels que des ethnologues, astrophysiciens, géologues et climatologues. Ce que nous vous proposons n'est pas un simple "tour", mais une véritable révolution.</p>
+                </article>
+            </div>
+            <div class="container-archi">
+                <h3>L'architecture</h3>
+                <article id="archi">
+                    <p>L'architecture innovante constitue une étape supplémentaire vers l'exploration de l'Espace, représentant l'extension de notre civilisation vers ses aspects les plus avancés. S'immerger dans l'un de nos hôtels,
+                         c'est embrasser une expérience sensorielle où l'on peut se ressourcer au contact des matières représentatives des quatre éléments. C'est une opportunité de se découvrir en harmonie avec la terre, l'air, l'eau et le feu. 
+                         Notre approche unique vise à transcender les frontières traditionnelles du voyage en offrant une expérience qui éveille les sens et connecte les visiteurs à la quintessence de chaque élément. En plongeant dans nos établissements, 
+                         les clients sont invités à explorer l'intersection fascinante entre l'innovation architecturale etla nature environnante.</p>
+                </article>
+                <img src="assets/images/images/facade-hotel.jpg" alt="hotel les 4 element facade moderne et lumineuse">
+            </div>
+        </section>
+
+        <section class="createur">
+            <div id="createur">
+                <h3>Le mot du créateur</h3>
+                <article>
+                    <img src="assets/images/pictos/“.png" alt="logo de guillemet du site des hotels 4Element">
+                    <p>L'architecture innovante représente une avancée vers l'exploration de l'Espace, symbolisant l'extension de notre civilisation vers ses plus grandes aspirations. S'immerger dans nos hôtels, c'est vivre une expérience sensorielle, se ressourcer au contact des matières des quatre éléments. 
+                        C'est une découverte en harmonie avec la terre, l'air, l'eau et le feu, où chaque détail architectural offre une connexion profonde avec ces éléments fondamentaux. Les témoignages de nos visiteurs soulignent l'impact transformateur de cette expérience immersive, 
+                        décrivant une reconnexion unique avec la nature et une redécouverte de soi au sein de cet environnement exceptionnel. Cette approche révolutionnaire redéfinit les attentes du voyage, offrant non seulement un hébergement luxueux, mais une véritable aventure sensorielle qui transcende les limites conventionnelles du tourisme.</p>
+                </article>
+                <p><strong>Trinh Xuan Thuan</strong></p>
+                <p>Co-fondateur de 4 Eléments</p>
+            </div>
+            <div class="portrait">
+                <img src="assets/images/images/coFondateur.jpg" alt="portrait du cofondateur des hotels les 4elements" class="MRthuan">
+            </div>
+        </section>
+    </main>
+    <a href="#backToTop"><img src="assets/images/pictos/backtotop.png" alt="logo backToTop" class="backToTop"></a>
+    <footer>
+        <div class="logo-footer">
+            <img src="assets/images/logo/logo-4elementNoir.png" alt="logo hotel 4Element" class="logo">
+            <p>N’attendez plus pour vivre l’expérience 4 éléments le temps d’une nuit.</p>
+            <ul>
+                <li><img src="assets/images/pictos/picto-insta.svg" alt="picto insta des hotels les 4elements"></li>
+                <li><img src="assets/images/pictos/picto-FB.svg" alt="pictos facebook des hotels les 4elements"></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h4>Contact</h4>
+            <p><strong>Adresse :</strong>8 Avenue exemple</p>
+            <p><strong>Ouverture :</strong>Tous les jours de 9h à 20h30</p>
+            <p><strong>Tél :</strong>33 08 280 28002</p>
+            <button class="btn-footer">Reserver en ligne</button>
+        </div>
+        <div class="mention-legales">
+            <ul>
+                <li>Mentions légales</li>
+                <li>Crédits</li>
+                <li>CGV</li>
+                <li>Confidentialité</li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>
