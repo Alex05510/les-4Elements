@@ -1,0 +1,12 @@
+@media (max-width: 650px){
+    header #reserver, #conexion {
+        display: none;
+    }
+    header,ul li{
+        display: none;
+    }
+    .container-form{
+        top: 20%;
+    }
+}
+
