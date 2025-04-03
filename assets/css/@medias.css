@@ -36,7 +36,17 @@
     }
     img.hotel{
         width: 100%;
+    } 
+    /************Pages hotel Feu******************/
+    .offre {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
     }
-    
-    
+    section.testimonial{
+        padding: 2rem;
+    }
+    .container-img{
+        width: 50%;
+    }
 }

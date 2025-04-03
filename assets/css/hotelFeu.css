@@ -24,23 +24,34 @@ h4.card-title {
     gap: 11rem;
     margin-top: 2rem;
 }
-ul#picto1,ul#picto2 {
+ul#picto1,ul#picto2,ul#picto3,ul#picto4 {
     display: block;
 } 
+.pictos-offres{
+  width:"29px";
+  height:"29px";
+}
+
 h3.offre-hotelFeu {
     margin-left: 10.5rem;
     margin-bottom: 5rem;
     margin-top: 5rem;
 }
 section.testimonial {
-    display: flex;
-    justify-content: center;
-    gap: 10rem;
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  align-items: flex-start;
 }
 #testimonial {
     margin-left: 27%;
     font-size: 30px;
     margin-bottom: 3rem;
+}
+.avyJ,.thomasC {
+  align-items: flex-start;
+  display: flex;
+  gap: 1rem;
 }
 
 /**/
@@ -94,8 +105,7 @@ section.testimonial {
     cursor: pointer;
   }
   
-  .close:hover,
-  .close:focus {
+  .close:hover,.close:focus {
     color: #000;
     text-decoration: none;
   }
@@ -108,9 +118,7 @@ section.testimonial {
     color: #333;
   }
   
-  form input,
-  form select,
-  form button {
+  form input,form select,form button {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -137,14 +145,13 @@ section.testimonial {
   form button:focus {
     outline: none;
   }
-  
 
   .error {
     margin-top: 15px;
     color: #e74c3c;
     font-weight: bold;
   }
-  
+
   .valid {
     margin-top: 15px;
     color: #2ecc71;
@@ -172,8 +179,8 @@ p.detail {
 }
 section.condition-general {
   display: flex;
-  width: 55%;
-  gap: 8rem;
+  width: 44%;
+  gap: 2rem;
   align-items: center;
   margin-left: 27%;
 }
@@ -203,6 +210,7 @@ span.depart {
 span {
   margin-left: 2rem;
 }
+
 
 
 

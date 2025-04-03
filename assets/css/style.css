@@ -152,6 +152,9 @@ section.Hotel-Eau {
     justify-content: space-between; 
     gap: 1.5rem;
 }
+.concept h3 {
+    margin-bottom: 3rem;
+}
 .container-concept {
     margin-left: 11%;
     margin-top: 5rem;
@@ -197,4 +200,5 @@ img.backToTop {
 .header{
     display: none;
 }
+
 
