@@ -8,9 +8,16 @@
         src: url(../../fonts/DM_Sans,Dancing_Script,Great_Vibes,Inter,Karla,etc/Karla/static/Karla-Regular.ttf);
         src: url(../../fonts/DM_Sans,Dancing_Script,Great_Vibes,Inter,Karla,etc/Karla/static/Karla-Bold.ttf);
     }
+.nav-burger {
+    display: none;
+}
 #video {
     width: 100%;
     height: auto;
+}
+button a {
+    text-decoration: none;
+    color: #fff;
 }
 header a:hover {
     border-bottom:solid 1px black;

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../../fonts/font.css">
+    <link rel="stylesheet" href="../css/reservation.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="primary-nav">
+                <div class="logo">
+                        <img src="../images/logo/logo-4elementNoir.png" alt="Logo hotel 4elements en noir" id="logo">
+                    <ul>
+                        <li><a href="../../index.html" title="liens vers la Home page des hotels 4Elements">Home</a></li>
+                        <li><a href="#sectionAir">Air</a></li>
+                        <li><a href="#sectionTerre">Terre</a></li>
+                        <li><a href="#sectionEau">Eau</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="secondary-nav">
+                <ul>
+                    <li>Contact</li>
+                    <li><img src="../images/pictos/picto-insta.svg" alt="picto lien insta hotel les 4Elements"></li>
+                    <li><img src="../images/pictos/picto-FB.svg" alt="picto lien Facebook hotel les 4Elements"></li>
+                </ul>
+                <button class="button" id="reserver">Reserver</button>
+                <div class="button" id="conexion">Se connecter</div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2>Formulaire de résérvation</h2>
+            <form id="form" class="reservation-feu"> 
+            <label>Nom complet :</label>
+            <input type="text" id="fullname" placeholder="Nom complet">
+        
+            <label>Numéro de rue :</label>
+            <input type="text" id="streetNumber" placeholder="Numéro de rue">
+            
+            <label>Adresse :</label>
+            <input type="text" id="adress" placeholder="Adresse (ex. rue)">
+            
+            <label>Code postal :</label>
+            <input type="text" id="postalCode" placeholder="Code postal">
+        
+            <label>Ville :</label>
+            <input type="text" id="city" placeholder="Ville">
+        
+            <label>Email :</label>
+            <input type="email" id="email" placeholder="Adresse email">
+            
+            <label>Téléphone :</label>
+            <input type="tel" id="phone" placeholder="Numéro de téléphone">
+        
+            <label>Type de logement :</label>
+            <select id="houseType">
+                <option value="suiteLaponie">Suite Laponie (850€ / nuit)</option>
+                <option value="igloo">Igloo (500€ / nuit)</option>
+            </select>
+            
+            <div id="specificOptions" style="display:none;">
+                <label>Nombre de chambres :</label>
+                <input type="number" id="rooms" min="1" max="2" placeholder="Nombre de chambres">
+            </div>
+            
+            <label>Nombre de personnes :</label>
+            <input type="number" id="people" min="1" max="2" placeholder="Nombre de personnes">
+            
+            <label>Date d'arrivée :</label>
+            <input type="date" id="arrivalDate">
+            
+            <label>Date de départ :</label>
+            <input type="date" id="departDate">
+            
+            <label>Services supplémentaires :</label>
+            <div>
+                <input type="checkbox" id="driver" value="chauffeur"> Chauffeur (11€/J) 
+                <input type="checkbox" id="breakfast" value="petit-déjeuner"> Petit-déjeuner (15€/J/Pers)
+                <input type="checkbox" id="lunch" value="repas"> Repas (25€/pers/repas)
+                <input type="checkbox" id="guide" value="guide"> Visite guidée: domaine + parc naturel (20€)
+            </div>
+            
+            <div id="dietOptions" style="display:none;">
+                <label>Régime alimentaire :</label>
+                <input type="text" id="diet" placeholder="Précisez votre régime">
+                <input type="checkbox" id="gluten" value="gluten"> Sans gluten
+                <input type="checkbox" id="lactose" value="lactose"> Sans lactose
+                <input type="checkbox" id="allergy" value="other"> Autres allergies et intolérances
+            </div>
+            
+            <div class="btn-reservation">
+                <button type="submit" id="submitBtn">Réserver</button>
+                <button type="reset" id="resetBtn">Réinitialiser</button>
+                <div id="saved-data" style="display: none;"></div>
+            </div>
+                <div id="errors" class="error"></div>
+                <div id="result" class="valid"></div>
+            </form>
+        </div>
+        </div>
+    </div>
+        <div id="detailModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Récapitulatif de la réservation</h2>
+                <div id="reservationDetails">
+                <!-- Les détails du formulaire seront insérés ici dynamiquement -->
+                </div>
+                <div class="btn-options">
+                    <button onclick="validateReservation()">Valider le paiement</button>
+                    <button onclick="closeModal()">Annuler</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="logo-footer">
+            <img src="..//images/logo/logo-4elementNoir.png" alt="logo hotel 4Element" class="logo">
+            <p>N’attendez plus pour vivre l’expérience 4 éléments le temps d’une nuit.</p>
+            <ul>
+                <li><img src="../images/pictos/picto-insta.svg" alt="picto insta des hotels les 4elements"></li>
+                <li><img src="../images/pictos/picto-FB.svg" alt="pictos facebook des hotels les 4elements"></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h5>Contact</h5>
+            <p><strong>Adresse :</strong>8 Avenue exemple</p>
+            <p><strong>Ouverture :</strong>Tous les jours de 9h à 20h30</p>
+            <p><strong>Tél :</strong>33 08 280 28002</p>
+            <button class="btn-footer"><a href="../page/reservation.html">Reserver en ligne</a></button>
+        </div>
+        <div class="mention-legales">
+            <ul>
+                <li>Mentions légales</li>
+                <li>Crédits</li>
+                <li>CGV</li>
+                <li>Confidentialité</li>
+                <li>Site réalisé par Audier Alexandre</li>
+            </ul>
+        </div>
+    </footer>   
+</body>
+<script src="../../script.js"></script>
+</html>

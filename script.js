@@ -1,21 +1,4 @@
-// Fonction pour ouvrir la modale
-function openModal() {
-    document.getElementById("reservationModal").style.display = "block";
-  }
-
-  // Fonction pour fermer la modale
-  function closeModal() {
-    document.getElementById("reservationModal").style.display = "none";
-  }
-
-  // Fermer la modale lorsqu'on clique en dehors du contenu
-  window.onclick = function(event) {
-    const modal = document.getElementById("reservationModal");
-    if (event.target === modal) {
-      modal.style.display = "none";
-    }
-  };
- // Gestion de la soumission du formulaire
+// Gestion de la soumission du formulaire
 document.getElementById("form").addEventListener("submit", function(e) {
     e.preventDefault(); // Empêche le rechargement de la page
   
@@ -71,7 +54,7 @@ document.getElementById("form").addEventListener("submit", function(e) {
       // Calcul du coût total
       let total = 0;
       if (houseType === "suiteLaponie") {
-        total += nights * 300; // Prix par nuit pour une suite
+        total += nights * 850; // Prix par nuit pour une suite
       } else if (houseType === "igloo") {
         total += nights * 500; // Prix par nuit pour un igloo
       }
@@ -115,9 +98,7 @@ document.getElementById("form").addEventListener("submit", function(e) {
     const dietOptions = document.getElementById("dietOptions");
     dietOptions.style.display = this.checked ? "block" : "none";
   });
-
-
-
-
-
-  
+// Ajouter un écouteur pour la soumission du formulaire
+document.getElementById("form").addEventListener("submit", function (event) {
+  event.preventDefault(); // Empêche le rechargement de la page
+});

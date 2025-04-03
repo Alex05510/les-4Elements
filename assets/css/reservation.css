@@ -3,58 +3,16 @@ main {
 }
 header {
     top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
 }
-.offres{
-    display: flex;
-}
-section.offre {
-    display: flex;
-    justify-content: space-around;
-    gap: 5%;
-    color: #363A2B;
-}
-h4.card-title {
-    width: 80%;
-    font-size: 30px;
-    margin-top: 5rem;
-    margin-bottom: 1rem;
-}
-.pictos {
-    display: flex;
-    gap: 11rem;
-    margin-top: 2rem;
-}
-ul#picto1,ul#picto2 {
-    display: block;
-} 
-h3.offre-hotelFeu {
-    margin-left: 10.5rem;
-    margin-bottom: 5rem;
-    margin-top: 5rem;
-}
-section.testimonial {
-    display: flex;
-    justify-content: center;
-    gap: 10rem;
-}
-#testimonial {
-    margin-left: 27%;
-    font-size: 30px;
-    margin-bottom: 3rem;
-}
-
-/**/
-.info-left,.info-right {
-    width: 18%;
-}
-.info-item {
-    display: flex;
-    align-items: center;
-}
-/*css de la modale*/
 #form {
     display: block;
+    width: 31%;
+    margin-left: 35%;
 }
+
 .modal {
     display: none; /* Caché par défaut */
     position: fixed;
@@ -151,63 +109,27 @@ section.testimonial {
     font-weight: bold;
     text-align: center;
   }
-  .services-sup,.activite-hotel {
+
+  h2 {
+    font-family:'Playfair Display', serif ;
+    font-weight: medium;
     text-align: center;
-    line-height: 2.5rem;
-}
-h4.service,h4.activite {
-    font-size: 30px;
+  }
+  .modal {
+    display: none; /* La modale est cachée par défaut */
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-}
-p.detail {
-    margin-top: 2rem;
-}
-.button-feu {
-    margin-top: 2rem;
-    background-color: #4F6234;
-    width: 14%;
-    padding: 0.5rem;
-    color: #fff;
-    border-radius: 0.5rem;
-}
-section.condition-general {
-  display: flex;
-  width: 55%;
-  gap: 8rem;
-  align-items: center;
-  margin-left: 27%;
-}
-.CG,.contacts-us {
-    margin-left: 27%;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-.contacts-us h4 {
-    font-size: 30px;
-    margin-bottom: 2rem;
-}
-img.backToTop {
-  position: fixed;
-  margin-left: 96%;
-  top: 85%;
-}
-.condition-arrivee,.annulation,.restriction,.pmr,.animaux,.paiement{
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  margin-bottom: 3rem;
-}
-span.depart {
-  margin-left: 5.3rem;
-}
-span {
-  margin-left: 2rem;
-}
-
-
-
-
-
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+  }
+  .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
   
-  
-

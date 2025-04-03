@@ -1,12 +1,42 @@
-@media (max-width: 650px){
-    header #reserver, #conexion {
+@media (max-width: 768px) {
+        header .container{
         display: none;
     }
-    header,ul li{
+    header .nav-burger{
+        display: flex;
+        justify-content: space-between;
+        padding: 4rem;
+    }
+    h1 {
         display: none;
     }
     .container-form{
-        top: 20%;
+        display: none;
     }
+    form{
+        display: flex;
+        flex-direction: column;
+        height: 20%;
+        margin-bottom: 20%;
+    }
+    #sectionFeu, #sectionTerre{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #sectionAir, #sectionEau{
+        display: block;
+    }
+    .concept{
+        display: flex;
+        flex-direction: column;
+    }
+    .createur{
+        display: flex;
+        flex-direction: column;
+    }
+    img.hotel{
+        width: 100%;
+    }
+    
+    
 }
-

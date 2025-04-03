@@ -1,0 +1,42 @@
+@font-face {
+    font-family:'Playfair Display', serif ;
+    src: url(../../fonts/DM_Sans,Dancing_Script,Great_Vibes,Inter,Noto_Sans,etc/Playfair_Display/static/PlayfairDisplay-Medium.ttf);
+    src: url(../../fonts/DM_Sans,Dancing_Script,Great_Vibes,Inter,Noto_Sans,etc/Playfair_Display/static/PlayfairDisplay-Bold.ttf);
+}
+@font-face {
+    font-family:'Karla', serif ;
+    src: url(../../fonts/DM_Sans,Dancing_Script,Great_Vibes,Inter,Karla,etc/Karla/static/Karla-Regular.ttf);
+    src: url(../../fonts/DM_Sans,Dancing_Script,Great_Vibes,Inter,Karla,etc/Karla/static/Karla-Bold.ttf);
+}
+
+h1 {
+    font-family:'Playfair Display', serif ;
+    font-weight: 500;
+    font-size: 100px;
+}
+h2 {
+    font-family:'Playfair Display', serif ;
+    font-weight: 500;
+    font-size: 96px;
+}
+h3 {
+    font-family:'Playfair Display', serif ;
+    font-weight: 700;
+    font-size: 48px;
+}
+h4 {
+    font-family:'Playfair Display', serif ;
+    font-weight: 700;
+    font-size: 30px;
+}
+h5 {
+    font-family:'Karla', serif ;
+    font-weight: 700;
+    font-size: 20px;
+}
+p {
+    font-family:'Karla', serif ;
+    font-weight: 400;
+    font-size: 20px;
+
+}

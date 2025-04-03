@@ -9,8 +9,8 @@ header {
     width: 100%;
     z-index: 100;
 }
-
 header a {
+
     text-decoration: none;
     color: #363A2B;
 }
@@ -46,6 +46,10 @@ div.logo {
     background-color: #4F6234;
     padding: 0.5rem ;
     border-radius: 0.5rem;
+    color: #fff;
+}
+#reserver a {
+    text-decoration: none;
     color: #fff;
 }
 .container-fluid {

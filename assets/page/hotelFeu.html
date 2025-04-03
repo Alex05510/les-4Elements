@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/vendors/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/@medias.css">
     <link rel="stylesheet" href="../css/main.css.map">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../../fonts/font.css">
     <link rel="stylesheet" href="../../assets/css/carousel.css">
     <link rel="stylesheet" href="../../assets/css/hotelFeu.css">
     <link rel="stylesheet" href="../css/header.css">
@@ -14,6 +16,15 @@
 </head>
 <body id="backToTop">
     <header>
+        <!---------------------------------->
+        <div class="nav-burger">
+            <img src="assets/images/pictos/pictoBurger-white.png" alt="pictos du menu burger responsiv">
+            <div class="reseaux">
+                <img src="assets/images/pictos/pictoInsta-white.png" alt="piscto lien instagram ">
+                <img src="assets/images/pictos/pisctoFB-white.png" alt="piscto lien facebook">
+            </div>
+        </div>
+    <!---------------------------------->
         <div class="container">
             <div class="primary-nav">
                 <div class="logo">
@@ -32,7 +43,7 @@
                     <li><img src="../images/pictos/picto-insta.svg" alt="picto lien insta hotel les 4Elements"></li>
                     <li><img src="../images/pictos/picto-FB.svg" alt="picto lien Facebook hotel les 4Elements"></li>
                 </ul>
-                <button class="button" id="reserver" onclick="openModal()">Reserver</button>
+                <button class="button" id="reserver"><a href="../page/reservation.html">Reserver</button></a>
                 <div class="button" id="conexion">Se connecter</div>
             </div>
         </div>
@@ -52,84 +63,10 @@
                 <article>
                     <p>L'hôtel Feu ne se situe bien sûr pas sur un volcan, mais en Finlande. 
                         Feu de laterre volcanique crachant non loin de là ses geysers, feu des volcans à l'horizon et, 
-                        bien entendu, feu des aurores boréales que vous pourrez admirer tous les soirs par le toit vitré de votre chambre.</p>
+                        bien entendu, feu des aurores boréales que vous pourrez admirer tous les soirs par le toit vitré de votre cha.</p>
                 </article>
-                <button class="reserver" onclick="openModal()">Reserver</button>
-                <!--La modale de reservation-->
-                <div id="reservationModal" class="modal">
-                    <div class="modal-content">
-                      <span class="close" onclick="closeModal()">&times;</span>
-                      <h2>Réserver</h2>
-                      <form id="form" class="reservation-feu"> 
-                        <label>Nom complet :</label>
-                        <input type="text" id="fullname" placeholder="Nom complet">
-                  
-                        <!-- Champs pour l'adresse détaillée -->
-                        <label>Numéro de rue :</label>
-                        <input type="text" id="streetNumber" placeholder="Numéro de rue">
-                        
-                        <label>Adresse :</label>
-                        <input type="text" id="adress" placeholder="Adresse (ex. rue)">
-                        
-                        <label>Code postal :</label>
-                        <input type="text" id="postalCode" placeholder="Code postal">
-                  
-                        <label>Ville :</label>
-                        <input type="text" id="city" placeholder="Ville">
-                  
-                        <label>Email :</label>
-                        <input type="email" id="email" placeholder="Adresse email">
-                        
-                        <label>Téléphone :</label>
-                        <input type="tel" id="phone" placeholder="Numéro de téléphone">
-                  
-                        <label>Type de logement :</label>
-                        <select id="houseType">
-                          <option value="suiteLaponie">Suite Laponie</option>
-                          <option value="igloo">Igloo</option>
-                        </select>
-                        
-                        <div id="specificOptions" style="display:none;">
-                          <label>Nombre de chambres :</label>
-                          <input type="number" id="rooms" min="1" max="2" placeholder="Nombre de chambres">
-                        </div>
-                        
-                        <label>Nombre de personnes :</label>
-                        <input type="number" id="people" min="1" max="2" placeholder="Nombre de personnes">
-                        
-                        <label>Date d'arrivée :</label>
-                        <input type="date" id="arrivalDate">
-                        
-                        <label>Date de départ :</label>
-                        <input type="date" id="departDate">
-                        
-                        <label>Services supplémentaires :</label>
-                        <div>
-                          <input type="checkbox" id="driver" value="chauffeur"> Chauffeur (11€/J) 
-                          <input type="checkbox" id="breakfast" value="petit-déjeuner"> Petit-déjeuner (15€/J/Pers)
-                          <input type="checkbox" id="lunch" value="repas"> Repas (25€/pers/repas)
-                          <input type="checkbox" id="guide" value="guide"> Visite guidée: domaine + parc naturel (20€)
-                        </div>
-                        
-                        <div id="dietOptions" style="display:none;">
-                          <label>Régime alimentaire :</label>
-                          <input type="text" id="diet" placeholder="Précisez votre régime">
-                          <input type="checkbox" id="gluten" value="gluten"> Sans gluten
-                          <input type="checkbox" id="lactose" value="lactose"> Sans lactose
-                          <input type="checkbox" id="allergy" value="other"> Autres allergies et intolérances
-                        </div>
-                        
-                        <div class="btn-reservation">
-                          <button type="submit" id="submitBtn">Réserver</button>
-                          <button type="reset" id="resetBtn">Réinitialiser</button>
-                          <div id="saved-data" style="display: none;"></div>
-                        </div>
-                  
-                        <div id="errors" class="error"></div>
-                        <div id="result" class="valid"></div>
-                      </form>
-                    </div>
-                  </div>
+                <!--Modale de reservation-->
+                <button class="reserver"><a href="../page/reservation.html">Reserver</a></button>
             </div>
             <div class="container-img">
                 <img src="../../assets/images/images/hotel-feu.jpg" alt="Hotel les 4element dans la foret et la neige" class="hotel">
@@ -163,7 +100,7 @@
                         </div>
                     </div>
                 </div>  
-                <button class="button" id="reserver" onclick="openModal()">Reserver</button>
+                <button class="button" id="reserver"><a href="../page/reservation.html" title="vers la page de reservation des hotels 4Elements">Reserver</a></button>
             </div>
             <div class="card" style="width: 37rem;">
                 <img src="../../assets/images/images/reception-hotel.jpg" class="card-img-top" alt="salle de reception suite laponie des hotels 4Elements">
@@ -195,91 +132,91 @@
         </section>
                 <div class="services-sup">
                     <h4 class="service">Services supplémentaires</h4>
-                    <p>Les services supplémentaires ne sont pas comprises dans le tarif de base de la chambre.</p>
+                    <p>Les services supplémentaires ne sont pas comprises dans le tarif de base de la cha.</p>
                 </div>
                 <div class="container-carousel">
                     <div>
-                    <div class="content">
-                        <h2>Chauffeur</h2>
-                        <span>Explorez la ville en toute sérénité avec notre service de chauffeur exclusif, offert par l'hôtel.</span>
-                        <p>11€ / jour</p>
-                    </div>
-                    </div>
-                    <div>
-                    <div class="content">
-                        <h2>Déjeuner</h2>
-                        <span>Commencez votre journée en beauté avec notre service de petit déjeuner raffiné.</span>
-                        <p>15€ / jour</p>
-                    </div>
+                        <div class="content">
+                            <h5>Chauffeur</h5>
+                            <span>Explorez la ville en toute sérénité avec notre service de chauffeur exclusif, offert par l'hôtel.</span>
+                            <p>11€ / jour</p>
+                        </div>
                     </div>
                     <div>
-                    <div class="content">
-                        <h2>Repas</h2>
-                        <span>Savourez l'art culinaire de notre service de repas, où chaque plat est préparé pour émerveiller vos papilles.</span>
-                        <p>25€ / repas</p>
-                    </div>
+                        <div class="content">
+                            <h5>Déjeuner</h5>
+                            <span>Commencez votre journée en beauté avec notre service de petit déjeuner raffiné.</span>
+                            <p>15€ / jour</p>
+                        </div>
                     </div>
                     <div>
-                    <div class="content">
+                        <div class="content">
+                            <h5>Repas</h5>
+                            <span>Savourez l'art culinaire de notre service de repas, où chaque plat est préparé pour émerveiller vos papilles.</span>
+                            <p>25€ / repas</p>
+                        </div>
                     </div>
+                    <div>
+                        <div class="content">
+                        </div>
                     </div>
                 </div>
                     <div class="activite-hotel">
-                    <h4 class="activite">Activités proches de l'hôtel</h4>
-                    <p>Les activités ne sont pas comprises dans le tarif de base de la chambre.</p>
+                        <h4 class="activite">Activités proches de l'hôtel</h4>
+                        <p>Les activités ne sont pas comprises dans le tarif de base de la cha.</p>
                     </div>
                 <div class="container-carousel-activité">
                     <div>
-                    <div class="content">
-                        <h2>Chien de traineaux</h2>
-                        <span>Plongez dans une aventure hivernale palpitante en explorant la beauté des paysages enneigés lors d'une excursion magique.</span>
-                        <div class="reserv">Reserver</div>
-                    </div>
-                    </div>
-                    <div>
-                    <div class="content">
-                        <h2>Rando en raquette</h2>
-                        <span>Parcourez des sentiers immaculés et découvrez la tranquillité hivernale tout en profitant d'une randonnée en raquettes.</span>
-                        <div class="reserv">Reserver</div>
-                    </div>
+                        <div class="content">
+                            <h5>Chien de traineaux</h5>
+                            <span>Plongez dans une aventure hivernale palpitante en explorant la beauté des paysages enneigés lors d'une excursion magique.</span>
+                            <div class="reserv">Reserver</div>
+                        </div>
                     </div>
                     <div>
-                    <div class="content">
-                        <h2>Découvrir les volcans</h2>
-                        <span>Explorez le monde fascinant des volcans, plongez au cœur de paysages spectaculaires et laissez-vous émerveiller.</span>
-                        <div class="reserv">Reserver</div>
-                    </div>
+                        <div class="content">
+                            <h5>Rando en raquette</h5>
+                            <span>Parcourez des sentiers immaculés et découvrez la tranquillité hivernale tout en profitant d'une randonnée en raquettes.</span>
+                            <div class="reserv">Reserver</div>
+                        </div>
                     </div>
                     <div>
-                    <div class="content">
+                        <div class="content">
+                            <h5>Découvrir les volcans</h5>
+                            <span>Explorez le monde fascinant des volcans, plongez au cœur de paysages spectaculaires et laissez-vous émerveiller.</span>
+                            <div class="reserv">Reserver</div>
+                        </div>
                     </div>
+                    <div>
+                        <div class="content">
+                        </div>
                     </div>
                 </div>
               </div>
-              <div class="container-fluid">
-                <video width="100%" height="auto" controls loop >
-                    <source src="../../assets/images/videos/fire.mp4" type="video/mp4" id="video">
-            </div>
+                <div class="container-fluid">
+                    <video width="100%" height="auto" controls loop >
+                        <source src="../../assets/images/videos/fire.mp4" type="video/mp4" id="video">
+                </div>
             <h4 id="testimonial">Avis client</h4>
             <section class="testimonial">
                 <div class="card" style="width: 22rem;">
                     <div class="profil-container">
-                    <img src="../../assets/images/images/avis-girl.png" class="card-img-top" alt="photo d'une cliente satisfaite des hotels 4 Elements">
-                    <div class="details">
-                        <p><strong>Avy Johnson</strong></p>
-                        <ul class="avis-stars">
-                            <li><img src="../../assets/images/pictos/star-black.png" alt="Pictos étoile avis les 4elements noir"></li>
-                            <li><img src="../../assets/images/pictos/star-black.png" alt="Pictos étoile avis les 4elements noir"></li>
-                            <li><img src="../../assets/images/pictos/star-black.png" alt="Pictos étoile avis les 4elements noir"></li>
-                            <li><img src="../../assets/images/pictos/star-White.png" alt="Pictos étoile avis les 4elements blanc"></li>
-                            <li>(4.5/5)</li>
-                        </ul>
-                    </div>
-                        <div class="card-body">
-                            <p class="card-text">Tout simplement exceptionnel. Le personnel était incroyablement attentionné et chaleureux, 
-                            toujours prêt à répondre à mes besoins. La suite Laponie était décorée avec élégance, offrant un mélange parfait de confort moderne et d'ambiance nordique. 
-                            Une expérience mémorable que je recommande vivement.</p>
-                        </div>
+                        <img src="../../assets/images/images/avis-girl.png" class="card-img-top" alt="photo d'une cliente satisfaite des hotels 4 Elements">
+                            <div class="details">
+                                <p><strong>Avy Johnson</strong></p>
+                                <ul class="avis-stars">
+                                    <li><img src="../../assets/images/pictos/star-black.png" alt="Pictos étoile avis les 4elements noir"></li>
+                                    <li><img src="../../assets/images/pictos/star-black.png" alt="Pictos étoile avis les 4elements noir"></li>
+                                    <li><img src="../../assets/images/pictos/star-black.png" alt="Pictos étoile avis les 4elements noir"></li>
+                                    <li><img src="../../assets/images/pictos/star-White.png" alt="Pictos étoile avis les 4elements blanc"></li>
+                                    <li>(4.5/5)</li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Tout simplement exceptionnel. Le personnel était incroyablement attentionné et chaleureux, 
+                                toujours prêt à répondre à mes besoins. La suite Laponie était décorée avec élégance, offrant un mélange parfait de confort moderne et d'ambiance nordique. 
+                                Une expérience mémorable que je recommande vivement.</p>
+                            </div>
                     </div>
                 </div>
                   <div class="card" style="width: 22rem;">
@@ -307,35 +244,48 @@
                 <div class="cards">
                     <div class="condition-arrivee">
                         <img src="../../assets/images/pictos/cle.png" alt="" width="27px" height="27px" class="pictos-condition">
-                        <p><strong>Arrivée</strong></p><br>
-                        <p>De 15h à 0h00</p>
+                        <div class="paragraphe">
+                            <p><strong>Arrivée</strong><span class="depart"><strong>Départ</strong></span></p>
+                            <p>De 15h à 0h00<span>Jusqu'à 12h</span></p>
+                            
+                        </div>
                     </div>
                     <div class="annulation">
                         <img src="../../assets/images/pictos/infos.png" alt="" width="27px" height="27px" class="pictos-general">
-                        <p><strong>Annulation/prépaiement</strong></p><br>
-                        <p>Les conditions d'annulation et de prépaiement varient en fonction du type d'hébergement.Veuillez saisir les dates de votre séjour et consulter les conditions de la chambre choisie.</p>
+                        <div class="paragraphe">
+                            <p><strong>Annulation/prépaiement</strong></p>
+                            <p>Les conditions d'annulation et de prépaiement varient en fonction du type d'hébergement.Veuillez saisir les dates de votre séjour et consulter les conditions de la cha choisie.</p>
+                        </div>
                     </div>
                     <div class="restriction">
                         <img src="../../assets/images/pictos/personage.png" alt="" width="27px" height="27px">
-                        <p><strong>Restriction relative à l'âge</strong></p><br>
-                        <p>Les clients doivent avoir au moins 18 ans pour pouvoir s'enregistrer.</p>
-                    </div>
+                        <div class="paragraphe">
+                            <p><strong>Restriction relative à l'âge</strong></p>
+                            <p>Les clients doivent avoir au moins 18 ans pour pouvoir s'enregistrer.</p>
+                        </div>
+                    </div> 
                 </div>
                 <div class="cards">
                     <div class="pmr">
                         <img src="../../assets/images/pictos/PMR.png" alt="" width="27px" height="27px">
-                        <p><strong>Accessibilité</strong></p>
-                        <p>L’établissement est accessible aux personnes à mobilité réduite (PMR)</p>
+                        <div class="paragraphe">
+                            <p><strong>Accessibilité</strong></p>
+                            <p>L'établissement est accessible aux personnes à mobilité réduite (PMR)</p>
+                        </div>
                     </div>
                     <div class="animaux">
                         <img src="../../assets/images/pictos/patte.png" alt="" width="27px" height="27px">
-                        <p><strong>Animaux de compagnie</strong></p>
-                        <p>Les animaux de compagnie ne sont pas admis au sein de l'établissement.</p>
+                        <div class="paragraphe">
+                            <p><strong>Animaux de compagnie</strong></p>
+                            <p>Les animaux de compagnie ne sont pas admis au sein de l'établissement.</p>
+                        </div>
                     </div>
                     <div class="paiement">
                         <img src="../../assets/images/pictos/carte.png" alt="" width="27px" height="27px">
-                        <p><strong>Moyens de paiement acceptés</strong></p>
-                        <p>Paiement par carte bancaire (VISA, MasterCard, American Express..) Les espèces ne sont pas acceptées. </p>
+                        <div class="paragraphe">
+                            <p><strong>Moyens de paiement acceptés</strong></p>
+                            <p>Paiement par carte bancaire (VISA, MasterCard, American Express..) Les espèces ne sont pas acceptées. </p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -348,6 +298,7 @@
     
 
     </main>
+    <a href="#backToTop"><img src="../../assets/images/pictos/backtotop.png" alt="logo backToTop" class="backToTop"></a>
     <footer>
         <div class="logo-footer">
             <img src="../images/logo/logo-4elementNoir.png" alt="logo hotel 4Element" class="logo">
@@ -358,11 +309,11 @@
             </ul>
         </div>
         <div class="contact">
-            <h4>Contact</h4>
+            <h5>Contact</h5>
             <p><strong>Adresse :</strong>8 Avenue exemple</p>
             <p><strong>Ouverture :</strong>Tous les jours de 9h à 20h30</p>
             <p><strong>Tél :</strong>33 08 280 28002</p>
-            <button class="btn-footer" onclick="openModal()">Reserver en ligne</button>
+            <button class="btn-footer"><a href="../page/reservation.html" title="vers la page de reservation des hotels 4Elements">Reserver en ligne</a></button>
         </div>
         <div class="mention-legales">
             <ul>
@@ -370,6 +321,7 @@
                 <li>Crédits</li>
                 <li>CGV</li>
                 <li>Confidentialité</li>
+                <li>Site réalisé par Audier Alexandre</li>
             </ul>
         </div>
     </footer>

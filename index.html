@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="assets/vendors/bootstrap-5.3.3-dist/css/bootstrap-utilities.min.css">
     <link rel="stylesheet" href="assets/css/@medias.css">
     <link rel="stylesheet" href="assets/main.scss">
+    <link rel="stylesheet" href="fonts/font.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/carousel.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -14,15 +15,24 @@
 </head>
 <body id="backToTop">
     <header>
+    <!---------------------------------->
+        <div class="nav-burger">
+            <img src="assets/images/pictos/pictoBurger-white.png" alt="pictos du menu burger responsiv">
+            <div class="reseaux">
+                <img src="assets/images/pictos/pictoInsta-white.png" alt="piscto lien instagram ">
+                <img src="assets/images/pictos/pisctoFB-white.png" alt="piscto lien facebook">
+            </div>
+        </div>
+    <!---------------------------------->
         <div class="container">
             <div class="primary-nav">
                 <div class="logo">
                     <img src="assets/images/logo/logo-4elementNoir.png" alt="Logo hotel 4elements en noir" id="logo">
                     <ul>
-                        <li><a href="#sectionFeu">Feu</a></li>
-                        <li><a href="#sectionAir">Air</a></li>
-                        <li><a href="#sectionTerre">Terre</a></li>
-                        <li><a href="#sectionEau">Eau</a></li>
+                        <li><a href="#sectionFeu" title="aller vers la section Feu de la page des hotel 4Elements">Feu</a></li>
+                        <li><a href="#sectionAir" title="aller vers la section Air de la page des hotel 4Elements">Air</a></li>
+                        <li><a href="#sectionTerre" title="aller vers la section Terre de la page des hotel 4Elements">Terre</a></li>
+                        <li><a href="#sectionEau" title="aller vers la section Eau de la page des hotel 4Elements">Eau</a></li>
                     </ul>
                 </div>
             </div>
@@ -32,7 +42,7 @@
                     <li><img src="assets/images/pictos/picto-insta.svg" alt="picto lien insta hotel les 4Elements"></li>
                     <li><img src="assets/images/pictos/picto-FB.svg" alt="picto lien Facebook hotel les 4Elements"></li>
                 </ul>             
-                <div class="button" id="reserver" onclick="openModal()">Reserver</div>
+                <div class="button" id="reserver"><a href="assets/page/reservation.html" title="vers la page de reservation des hotels 4Elements">Reserver</a></div>
                 <div class="button" id="conexion">Se connecter</div>
             </div>
         </div>
@@ -98,13 +108,13 @@
             <div class="container-Air">
                 <h2>Hôtel Air</h2>
                 <p class="Bresil"><img src="assets/images/pictos/lieux.png" alt="picto fleche maps" width="22px" height="28px">Bresil</p>
-                <ul class="avis-stars">
-                    <li><img src="assets/images/pictos/star-black.png" alt="Pictos étoile avis les 4elements noir"></li>
-                    <li><img src="assets/images/pictos/star-black.png" alt="Pictos étoile avis les 4elements noir"></li>
-                    <li><img src="assets/images/pictos/star-black.png" alt="Pictos étoile avis les 4elements noir"></li>
-                    <li><img src="assets/images/pictos/star-White.png" alt="Pictos étoile avis les 4elements blanc"></li>
-                    <li>(325 avis)</li>
-                </ul>
+                    <ul class="avis-stars">
+                        <li><img src="assets/images/pictos/star-black.png" alt="Pictos étoile avis les 4elements noir"></li>
+                        <li><img src="assets/images/pictos/star-black.png" alt="Pictos étoile avis les 4elements noir"></li>
+                        <li><img src="assets/images/pictos/star-black.png" alt="Pictos étoile avis les 4elements noir"></li>
+                        <li><img src="assets/images/pictos/star-White.png" alt="Pictos étoile avis les 4elements blanc"></li>
+                        <li>(325 avis)</li>
+                    </ul>
                 <article>
                     <p>L'hôtel Air se situe à la frontière du Brésil et du Pérou. 
                         C'est un concept architectural innovant qui a permis une implantation à la cîme de la forêt pour offrir un panorama vertigineux et cotoyerchaque matin, 
@@ -211,11 +221,11 @@
             </ul>
         </div>
         <div class="contact">
-            <h4>Contact</h4>
+            <h5>Contact</h5>
             <p><strong>Adresse :</strong>8 Avenue exemple</p>
             <p><strong>Ouverture :</strong>Tous les jours de 9h à 20h30</p>
             <p><strong>Tél :</strong>33 08 280 28002</p>
-            <button class="btn-footer">Reserver en ligne</button>
+            <button class="btn-footer"><a href="assets/page/reservation.html">Reserver en ligne</a></button>
         </div>
         <div class="mention-legales">
             <ul>
@@ -223,10 +233,10 @@
                 <li>Crédits</li>
                 <li>CGV</li>
                 <li>Confidentialité</li>
+                <li>Site réalisé par Audier Alexandre</li>
             </ul>
         </div>
-    </footer>
-    
+    </footer>  
 </body>
 <script src="script.js"></script>
 </html>
