@@ -2,6 +2,9 @@
         header .container{
         display: none;
     }
+    body{
+        align-items: center;
+    }
     header .nav-burger{
         display: flex;
         justify-content: space-between;

@@ -83,7 +83,7 @@ document.getElementById("form").addEventListener("submit", function(e) {
     }
   });
   
-  // Gestion des options spécifiques au type de logement
+ 
   document.getElementById("houseType").addEventListener("change", function() {
     const specificOptions = document.getElementById("specificOptions");
     if (this.value === "igloo") {
@@ -93,12 +93,12 @@ document.getElementById("form").addEventListener("submit", function(e) {
     }
   });
   
-  // Gestion des régimes alimentaires
+ 
   document.getElementById("breakfast").addEventListener("change", function() {
     const dietOptions = document.getElementById("dietOptions");
     dietOptions.style.display = this.checked ? "block" : "none";
   });
-// Ajouter un écouteur pour la soumission du formulaire
+
 document.getElementById("form").addEventListener("submit", function (event) {
-  event.preventDefault(); // Empêche le rechargement de la page
+  event.preventDefault();
 });
